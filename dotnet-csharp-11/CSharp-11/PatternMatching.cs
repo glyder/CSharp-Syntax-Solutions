@@ -12,7 +12,7 @@ public static class PatternMatching
 
     public static void First()
     {
-        object obj = 123;
+        object obj = "123";
         if (obj is string s)
         {
             Console.WriteLine($"PatternMatching => Object is a string: {s}");
@@ -21,6 +21,8 @@ public static class PatternMatching
         {
             Console.WriteLine($"PatternMatching => Object is an int: {i}");
         }
+        Console.WriteLine("-------------------------------\n");
+
     }
 
     public static void GetMessage()

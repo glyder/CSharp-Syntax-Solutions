@@ -1,23 +1,47 @@
-﻿using System;
+﻿using BenchmarkDotNet.Running;
 
-Console.WriteLine("C# 11 Syntax - Tester!");
-Console.WriteLine("=======================\n");
+//Console.WriteLine("C# 11 Syntax - Tester!");
+//Console.WriteLine("=======================\n");
 
-//C# ??
-InterporlatedStrings.Run();
-NullableReferenceTypes.Run();
-//C# 9
-Record.Run();
-PatternMatching.Run();
-//C# 10
-Deconstruction.Run();
-//C# 11
+//Benchmarks
+//BenchmarkRunner.Run<SpanOfT>(); 
+
+//Smart Programming
+//-------------------
+//SpanOfT, StringSpanBenchmark, NameParserBenchmarks
+//BenchmarkRunner.Run<SpanOfT>();
+new SpanOfT().Run();
+
+// C# ??
+//------
+//InterporlatedStrings.Run();
+//NullableReferenceTypes.Run();
+
+
+// C# 8
+//-----
+//Ranges.Run();
+
+// C# 9
+//------
+//Record.Run();
+//PatternMatching.Run();
+
+// C# 10
+//------
+//Deconstruction.Run();
+
+// C# 11
+//------
+
+// C# 12
+//------
 
 
 // Design Patterns
 // DesignPatterns.Run();
 
-Console.ReadKey();
+//Console.ReadKey();
 
 /*
  
