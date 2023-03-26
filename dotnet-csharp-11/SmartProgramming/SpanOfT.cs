@@ -29,6 +29,9 @@ public class SpanOfT
         var date1 = DateWithSubstringOnHeap();
         var date2 = DateWithSpanOnStack();
         Console.WriteLine(date2);
+
+        //TODO: ?
+        //https://www.codemag.com/Article/2207031/Writing-High-Performance-Code-Using-SpanT-and-MemoryT-in-C
     }
 
     [Benchmark]

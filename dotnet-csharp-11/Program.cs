@@ -1,4 +1,8 @@
-﻿using BenchmarkDotNet.Running;
+﻿using static System.Console;
+
+using BenchmarkDotNet.Running;
+using CSharp_9;
+using CSharp_8;
 
 //Console.WriteLine("C# 11 Syntax - Tester!");
 //Console.WriteLine("=======================\n");
@@ -10,7 +14,7 @@
 //-------------------
 //SpanOfT, StringSpanBenchmark, NameParserBenchmarks
 //BenchmarkRunner.Run<SpanOfT>();
-new SpanOfT().Run();
+//new SpanOfT().Run();
 
 // C# ??
 //------
@@ -20,11 +24,14 @@ new SpanOfT().Run();
 
 // C# 8
 //-----
+Nullability8.Run();
+NullabilityFixes9.Run();
 //Ranges.Run();
 
 // C# 9
 //------
 //Record.Run();
+//Record.Basic(); 
 //PatternMatching.Run();
 
 // C# 10

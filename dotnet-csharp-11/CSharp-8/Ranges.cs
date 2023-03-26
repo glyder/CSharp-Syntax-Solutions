@@ -7,7 +7,11 @@ public static class Ranges
         ReadOnlySpan<char> input = "Hello World-";
         Console.Out.WriteLine(input.TrimEnd('-'));
         // or use an indexer to always remove the last character:
+
+
         int y = 2; Console.Out.WriteLine(input[^y]);   // --y from last char
+        //numbers[^y] is the same with numbers[length - y]
+
         int i = 2; Console.Out.WriteLine(input[..^i]); // trim by i 
 
     }

@@ -17,7 +17,9 @@ public class PersonClass
     }
 }
 
-public record PersonRecord(string FirstName, string LastName);
+public record PersonRecord(string FirstName, 
+                           string LastName, 
+                           int Age);
 
 public class Person
 {
